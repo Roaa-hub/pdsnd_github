@@ -86,13 +86,13 @@ def time_stats(df):
     print("\nCalculating the peak times of travel...")
     start_time = time.time()
 
-    #Common month from the data set
+    #Common month from data set
     common_month = df['Start Time'].dt.month.mode()[0]
 
-    #Common day from the data set
+    #Common day from data set
     common_day = df['Start Time'].dt.weekday_name.mode()[0]
 
-    #Common hour from the data set
+    #Common hour from data set
     common_hour = df['Start Time'].dt.hour.mode()[0]
 
 
